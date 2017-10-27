@@ -1,0 +1,160 @@
+.content-wrapper {
+    background-color: #1a2c46;
+}
+
+.main-article {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+p {
+    color: #f2efde;
+    font: 'Montserrat';
+    font-weight: 200;
+    text-align: center;
+}
+
+
+.led {
+    color:#F2EFDE;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brightest {
+    width: 750px;
+    filter: drop-shadow(rgba(255, 255, 255, 0.79) 0px 0px 6px) drop-shadow(rgba(255, 255, 255, 0.79) 0px 0px 6px) drop-shadow(rgba(255, 255, 255, 0.79) 0px 0px 6px);
+}
+
+.brightest:hover {
+    filter: drop-shadow(rgba(255, 255, 255, 0.925) 0px 0px 6px) drop-shadow(rgba(255, 255, 255, 0.925) 0px 0px 6px) drop-shadow(rgba(255, 255, 255, 0.925) 0px 0px 6px);;
+}
+
+p,
+.led,
+.brightest,
+.line,
+picture {
+     animation: opacity 10s ease-in-out;
+
+    @keyframes opacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+}
+
+.container-lines {
+    margin: 0;
+    pointer-events: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.line {
+    display: inline-block;
+    position: absolute;
+    height: 1px;
+    width: 3em;
+    transform-origin: top left;
+    z-index: 11;
+
+    box-shadow:  
+        rgba(242, 239, 222, 0.906) 0px 0px 10px, 
+        rgba(242, 239, 222, 0.906) 0px 0px 10px, 
+        rgba(242, 239, 222, 0.906) 0px 0px 10px;
+    
+    
+}
+
+.line:nth-of-type(1) {
+    top: 30%;
+    right: -5px;
+}
+
+.line:nth-of-type(2) {
+    top: 40%;
+    right: 40%;
+}
+
+.line:nth-of-type(3) {
+    top: 45%;
+    right: 97%;
+}
+
+.line:nth-of-type(4) {
+    top: 80%;
+    right: -20px;
+}
+
+.line:nth-of-type(5) {
+    top: 85%;
+    right: 80%;
+}
+
+.line:nth-of-type(6) {
+    top: 90%;
+    right: 55%;
+}
+
+.image-container {
+    z-index: 0;
+
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    p {
+    font-size: 12px;
+    margin-top: 5px;
+    }
+
+
+    .led {
+        color:#F2EFDE;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+    .main-article {
+    position: absolute;
+    top: 55%;
+    left: 16%;
+    transform: translate(-9%, -50%);
+    z-index: 9999;
+}
+    img {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+}
+    
+    .line:nth-of-type(6),
+    .line:nth-of-type(4){
+    display: none;
+}
+        
+}

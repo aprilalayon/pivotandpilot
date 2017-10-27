@@ -1,0 +1,124 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+header {
+
+    h1 {
+        
+        a {
+            text-decoration: none;
+            text-align: center;
+            padding-left: 20px;
+            color: #F2EFDE;
+        }
+        
+        a:hover,
+        a:visited {
+            color: #F2EFDE;
+        }
+        
+    }
+    
+}
+
+.site-logo > object {
+    width: 7%;
+    padding: 2.5px;
+    display: inline-block;
+}
+
+
+.site-logo {
+    justify-content: center;
+    text-align: center;
+}
+
+
+.site-center {
+    display: block;
+    margin: auto;
+    position: relative;   
+}
+
+
+.site-title {
+    text-align: center;
+    letter-spacing: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.menu-order-now-container {
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'Montserrat';
+                font-size: 14px;
+                letter-spacing: 2px;
+                color: #F2EFDE;
+            }
+            
+            a:hover,
+            a:visited {
+                color: #F2EFDE;
+            }
+        }
+    }
+}
+
+.menu-primary-menu-container {
+    display: none;
+}
+
+header {
+    button {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .menu-order-now-container {
+        visibility:hidden;
+    }
+        
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .menu-order-now-container {
+        visibility:hidden;
+    }
+    
+    .site-logo > object {
+    width: 10%;
+    padding: 2.5px;
+    display: inline-block;
+                
+    }
+    
+    .site-title {
+        font-size: 13px;
+        letter-spacing: 18px;
+    }
+
+        
+}
